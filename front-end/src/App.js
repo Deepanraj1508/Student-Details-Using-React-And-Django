@@ -1,11 +1,10 @@
-import Student from "./compontents/Student";
+import HomePage from "./compontents/Homepage";
 function App() {
   return (
 
-<div className="App">
-    
-    <Student/>
-  </div>
+    <div className="App">
+      <HomePage />
+    </div>
   );
 }
 

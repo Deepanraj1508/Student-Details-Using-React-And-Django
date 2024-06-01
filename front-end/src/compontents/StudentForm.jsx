@@ -30,16 +30,16 @@ function StudentForm({ loadStudents, selectedStudent, clearSelectedStudent }) {
     try {
       if (id) {
         await axios.put(`http://127.0.0.1:8000/student/${id}`, { name, address, fee });
-        alert('Student Updated Successfully');
+        // alert('Student Updated Successfully');
       } else {
         await axios.post('http://127.0.0.1:8000/student', { name, address, fee });
-        alert('Student Registration Successful');
+        // alert('Student Registration Successful');
       }
       clearForm();
       loadStudents();
       clearSelectedStudent();
     } catch (err) {
-      alert('Failed to save student');
+      // alert('Failed to save student');
       console.error(err);
     }
   };
